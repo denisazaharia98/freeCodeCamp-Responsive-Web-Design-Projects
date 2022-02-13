@@ -1,0 +1,107 @@
+body {
+  background-color: #dcdcdc;
+  margin: 0;
+}
+
+main {
+  margin: 5%;
+  font-family: "Montserrat", sans-serif;
+  text-align: justify;
+  line-height: 25px;
+  color: #191919;
+}
+
+.navbar {
+  margin: 0 auto;
+  width: 100%;
+  background-color: #191919;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.navbar a {
+  color: #dcdcdc;
+  text-align: center;
+  padding: 2rem;
+  transition: 0.5s;
+  transition-property: background-color;
+}
+
+.navbar a:hover {
+  background-color: #dcdcdc;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+.title {
+  font-size: x-large;
+  text-align: center;
+}
+
+.medium-title {
+  font-size: large;
+}
+
+.small-title {
+  font-size: medium;
+}
+
+.title,
+.medium-title,
+.small-title {
+  font-family: "Assistant", sans-serif;
+  font-weight: 600;
+}
+
+#img-div {
+  width: 20rem;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+#image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+#img-caption,
+#caption {
+  text-align: center;
+  font-size: small;
+}
+
+.line {
+  height: 2px;
+  width: 100%;
+  background-color: hsl(0, 0%, 10%, 0.3);
+}
+
+@media screen and (min-width: 544px) and (max-width: 750px) {
+  /*mobile phone breakpoint*/
+  #img-div {
+    width: 70%;
+  }
+  .navbar a {
+    padding: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 390px) and (max-width: 544px) {
+  .navbar a {
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .navbar a {
+    padding: 0.5rem;
+  }
+}
