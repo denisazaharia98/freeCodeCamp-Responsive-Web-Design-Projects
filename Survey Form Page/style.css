@@ -1,0 +1,122 @@
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("https://images.unsplash.com/photo-1533064135284-c393eb1df9c0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1790&q=80");
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  margin: 0;
+}
+
+.blur-screen {
+  /*glassmorphism*/
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(15px);
+  /*---*/
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.message {
+  text-align: center;
+  width: 40%;
+  height: 20%;
+  border-radius: 20px;
+  background-color: white;
+  padding: 2rem;
+  height: fit-content;
+}
+
+.img-success {
+  width: 6rem;
+  height: 6rem;
+}
+
+.title {
+  display: block;
+  font-size: large;
+  text-align: center;
+  font-weight: 600;
+}
+
+main {
+  margin: 5%;
+  color: #191919;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+h1,
+#description {
+  font-family: "Lato", sans-serif;
+  text-align: center;
+}
+
+div {
+  margin: 1.5rem;
+}
+
+form {
+  width: fit-content;
+  margin: 0 auto;
+  padding: 4% 6%;
+  z-index: 1;
+  /*glassmorphism*/
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  /*---*/
+}
+
+#name,
+#email,
+#number,
+#dropdown {
+  margin: 15px auto 0;
+  padding: 6px;
+  border-radius: 5px;
+  border: 1px;
+  width: 95%;
+  font-size: 15px;
+}
+
+#dropdown {
+  width: 98%;
+  cursor: pointer;
+}
+
+#question {
+  line-height: 23px;
+}
+
+#story {
+  width: 95%;
+  font-family: "Roboto", sans-serif;
+  border-radius: 7px;
+  padding: 13px 0 0 13px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 10% auto;
+  margin: 0 auto;
+  display: block;
+  border-radius: 10px;
+  border: 1px;
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  /*mobile phone breakpoint*/
+  body {
+    background-size: auto 100%;
+  }
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+
+        <section></section>
+        <!-- <div class="blur-screen">
+            <div class="message"></div>
+        </div> -->
+        <form id="survey-form">
+            <h1 id="title">Survey Form</h1>
+            <p id="description">Complete the form for a personalised tour!</p>
+            <div>
+                <label for="name" id="name-label">Name</label><br>
+                <input type="text" id="name" placeholder="Enter your name" name="name" required>
+            </div>
+            <div>
+                <label for="email" id="email-label">Email</label><br>
+                <input type="email" id="email" placeholder="Enter your email" name="email" required>
+            </div>
+            <div>
+                <label for="number" id="number-label">Age</label><br>
+                <input type="number" id="number" placeholder="Age" name="number" min="6" max="100" required>
+            </div>
+            <div>
+                <label for="dropdown" id="dropdown-label">What kind of bicycle do you own?</label><br>
+                <select name="dropdown" id="dropdown" required>
+                    <option value="">Please choose an option</option>
+                    <option value="mountain">Mountain bike</option>
+                    <option value="touring">Touring bikes and road bike</option>
+                    <option value="trail">Trail bike</option>
+                    <option value="comfort">Comfort bike</option>
+                    <option value="bmx">BMX bike</option>
+                    <option value="hybrid">Hybrid bike</option>
+                    <option value="hybrid">Electric bike</option>
+                </select>
+            </div>
+            <div id="question">
+                <p>How often do you ride your bike?</p>
+                <input type="radio" name="how-often" id="once-month" value="1/m" required />
+                <label for="once-month">Once a month</label><br>
+                <input type="radio" name="how-often" id="twice-month" value="2/m" />
+                <label for="twice-month">Twice a month</label><br>
+                <input type="radio" name="how-often" id="once-week" value="1/w" />
+                <label for="once-week">Once a week</label><br>
+                <input type="radio" name="how-often" id="three-week" value="3/w" />
+                <label for="three-week">Three times a week</label><br>
+                <input type="radio" name="how-often" id="everyday" value="everyday" />
+                <label for="everyday">Everyday</label><br>
+            </div>
+            <div id="question">
+                <p>What equipment do you use? Select all that apply.</p>
+                <input type="checkbox" id="shorts" name="shorts" value="shorts">
+                <label for="shorts">Padded shorts or tights</label><br>
+                <input type="checkbox" id="top" name="top" value="top">
+                <label for="top">Wicking jersey or top</label><br>
+                <input type="checkbox" id="gloves" name="gloves" value="gloves">
+                <label for="gloves">Gloves</label><br>
+                <input type="checkbox" id="saddlebag" name="saddlebag" value="saddlebag">
+                <label for="saddlebag">Saddle (underseat) bag</label><br>
+                <input type="checkbox" id="kit" name="kit" value="kit">
+                <label for="kit">Patch kit (and/or spare tube or tubes)</label><br>
+                <input type="checkbox" id="lock" name="lock" value="lock">
+                <label for="lock">Lock</label><br>
+                <input type="checkbox" id="watch" name="watch" value="watch">
+                <label for="watch">Watch or cycling computer</label><br>
+                <input type="checkbox" id="phone" name="phone" value="phone">
+                <label for="phone">Cell phone</label><br>
+            </div>
+            <div>
+                <p>How did you learn to ride a bike?</p>
+                <textarea id="story" name="story" rows="6" cols="30" placeholder="Enter your story here..."
+                    required></textarea>
+            </div>
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>
