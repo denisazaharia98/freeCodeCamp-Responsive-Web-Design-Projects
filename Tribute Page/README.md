@@ -8,8 +8,8 @@ This is a solution to the [Tribute Page project on freeCodeCamp](https://www.fre
 
 # Links
 
-- Solution URL: 
-- Live Site URL:
+- Solution URL: https://github.com/denisazaharia98/freeCodeCamp-Responsive-Web-Design-Projects/tree/main/Tribute%20Page
+- Live Site URL: https://denisazaharia98.github.io/freeCodeCamp-Responsive-Web-Design-Projects/Tribute%20Page/
 
 # Built with
 
