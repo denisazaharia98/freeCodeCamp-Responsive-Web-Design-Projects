@@ -11,7 +11,7 @@ This is a solution to the [Technical Documentation Page project on freeCodeCamp]
 
 # Links
 
-- Solution URL: 
+- Solution URL: https://github.com/denisazaharia98/freeCodeCamp-Responsive-Web-Design-Projects/tree/main/Technical%20Documentation%20Page
 - Live Site URL: 
 
 # Built with
