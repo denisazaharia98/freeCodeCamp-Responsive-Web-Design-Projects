@@ -1,0 +1,246 @@
+body {
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  color: #212121;
+  background: #fff;
+  margin: 0;
+}
+
+header,
+.subtitle {
+  font-family: "Rosario", sans-serif;
+}
+
+nav {
+  height: 100%;
+  width: 260px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-right: 2px solid #aeaeae;
+  background-color: inherit;
+}
+
+nav > header {
+  display: inline;
+  width: 240px;
+  padding: 10px;
+}
+
+#navbar ul {
+  height: auto;
+  margin-top: 4px;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#navbar li {
+  position: relative;
+  list-style: none;
+  border-top: 1px solid #909090;
+}
+
+#navbar a {
+  display: block;
+  margin: 12px 30px;
+  color: inherit;
+}
+
+.nav-link,
+.documentation {
+  text-decoration: none;
+  font-size: small;
+}
+
+/* links in the navbar for subtitles */
+.sub-menu {
+  padding-left: 30px;
+  text-decoration: none;
+  font-size: small;
+}
+
+.flex-table {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border: 1.5px solid #3d3d3d;
+}
+
+header {
+  font-size: x-large;
+  font-weight: 600;
+}
+
+.subtitle {
+  font-size: large;
+}
+
+/* to place the nav on left */
+main {
+  margin-left: 260px;
+}
+
+/* center content on a row, like an image and formulas */
+.center-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.center-row > ul {
+  list-style-type: none;
+}
+
+/* center content on a column, like an image and formulas */
+.center-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.single-item {
+  padding: 0 15px;
+  text-align: center;
+}
+
+.center-img {
+  display: block;
+  margin: 10px auto;
+}
+
+/* width of the table elements */
+.name-col {
+  width: 20%;
+}
+
+.about-col {
+  width: 25%;
+}
+
+.img-col {
+  width: 30%;
+}
+
+.name-col,
+.about-col,
+.img-col {
+  text-align: center;
+  padding: 3px 0;
+}
+
+.img-col > img {
+  width: 10rem;
+}
+
+.main-section,
+footer {
+  margin: 4% auto;
+  width: 85%;
+}
+
+footer a {
+  color: #05aff9;
+}
+
+button {
+  border-radius: 40px;
+  border: none;
+  margin: 15px;
+  cursor: pointer;
+}
+
+/* DARK MODE */
+.dark-mode {
+  background-color: #212121;
+  color: #aaaaaa;
+}
+
+/* To see the images better in dark mode */
+img {
+  background-color: white;
+}
+
+@media screen and (max-width: 890px) {
+  nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 12rem; /*8888888888888888888*/
+    position: fixed;
+    border-bottom: 2px solid #aeaeae;
+    display: block;
+  }
+  .hide {
+    height: 0;
+  }
+  .show {
+    font-size: inherit;
+    color: inherit;
+  }
+  .none {
+    display: none;
+  }
+  #navbar ul {
+    height: 65%;
+    z-index: 999;
+    margin-top: 4px;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  nav > header {
+    display: inline-block;
+  }
+  button {
+    display: inline-block;
+  }
+  main {
+    z-index: 1;
+    margin-left: 0;
+    margin-top: 13rem; /*8888888888888888888*/
+  }
+  /* Hamburger menu */
+  .hamburger-menu {
+    margin: 15px 15px 0 0;
+    cursor: pointer;
+    width: 30px;
+    float: right;
+    border: 1px solid gray;
+    padding: 3px;
+    border-radius: 5px;
+  }
+  .line {
+    width: 24px;
+    height: 2px;
+    background-color: #dcdcdc;
+    margin: 4px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  nav > header {
+    text-align: left;
+    width: auto;
+  }
+  #page-title {
+    float: left;
+    font-size: large;
+  }
+  .table-container > .header {
+    display: none;
+  }
+  .flex-table > div {
+    flex: 100%;
+  }
+  .name-col,
+  .img-col,
+  .about-col {
+    border-bottom: 1px solid black;
+  }
+}

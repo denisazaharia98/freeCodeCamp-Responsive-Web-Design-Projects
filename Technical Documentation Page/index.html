@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Rosario:wght@300&display=swap" rel="stylesheet">
+
+    <!-- Dark Theme Button -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <nav id="navbar" class="navbar">
+        <button class="material-icons" id="dark-mode">dark_mode</button>
+        <header>Triangles Theory</header>
+        <div class="hamburger-menu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="nav-content">
+            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+            <li><a class="nav-link" href="#Types_of_triangles">Types of triangles</a>
+                <ul>
+                    <li><a class="sub-menu" href="#lengths_of_sides">By lengths of sides</a></li>
+                    <li><a class="sub-menu" href="#internal_angles">By internal angles</a></li>
+                </ul>
+            </li>
+            <li><a class="nav-link" href="#Area_of_triangles">Area of triangles</a>
+                <ul>
+                    <li><a class="sub-menu" href="#base_height">Knowing base and height</a></li>
+                    <li><a class="sub-menu" href="#three_sides">Knowing three sides</a></li>
+                    <li><a class="sub-menu" href="#two_sides_angle">Knowing two sides and the included angle</a></li>
+                </ul>
+            </li>
+            <li><a class="nav-link" href="#Important_points_of_triangles">Important points of triangles</a></li>
+            <li><a class="nav-link" href="#Right-angled_triangles">Right-angled triangles</a>
+                <ul>
+                    <li><a class="sub-menu" href="#two_types">Two types</a></li>
+                </ul>
+            </li>
+            <li><a class="documentation" href="#documentation">Documentation</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>
+                Introduction
+            </header>
+            <p>A triangle is a polygon with three edges and three vertices. It is one of the basic shapes in geometry. A
+                triangle with vertices A, B, and C is denoted . In Euclidean geometry, any three points, when
+                non-collinear, determine a unique triangle and simultaneously, a unique plane (i.e. a two-dimensional
+                Euclidean space).</p>
+        </section>
+        <section class="main-section" id="Types_of_triangles">
+            <header>
+                Types of triangles
+            </header>
+            <p>The terminology for categorizing triangles is more than two thousand years old, having been defined on
+                the very first page of Euclid's Elements. The names used for modern classification are either a direct
+                transliteration of Euclid's Greek or their Latin translations.</p>
+            <p class="subtitle" id="lengths_of_sides">By lengths of sides</p>
+            <p>Ancient Greek mathematician Euclid defined three types of triangle according to the lengths of their
+                sides:</p>
+            <ul>
+                <li>An equilateral triangle has three sides of the same length. An equilateral triangle is also a
+                    regular polygon with all angles measuring 60°. (<strong>fig.1.a</strong>)</li>
+                <li>An isosceles triangle has two sides of equal length. An isosceles triangle also has two angles of
+                    the same measure, namely the angles opposite to the two sides of the same length. This fact is the
+                    content of the isosceles triangle theorem, which was known by Euclid. Some mathematicians define an
+                    isosceles triangle to have exactly two equal sides, whereas others define an isosceles triangle as
+                    one with at least two equal sides. The latter definition would make all equilateral triangles
+                    isosceles triangles. The 45–45–90 right triangle, which appears in the tetrakis square tiling, is
+                    isosceles. (<strong>fig.1.b</strong>)</li>
+                <li>A scalene triangle has all its sides of different lengths. Equivalently, it has all angles of
+                    different measure. (<strong>fig.1.c</strong>)</li>
+            </ul>
+            <div class="center-row">
+                <div class="single-item"><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Triangle.Equilateral.svg/180px-Triangle.Equilateral.svg.png">
+                    <p><strong>Fig.1.a.</strong> An equilateral triangle</p>
+                </div>
+                <div class="single-item"><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Triangle.Isosceles.svg/117px-Triangle.Isosceles.svg.png">
+                    <p><strong>Fig.1.b.</strong> An isosceles triangle</p>
+                </div>
+                <div class="single-item"><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Triangle.Scalene.svg/180px-Triangle.Scalene.svg.png">
+                    <p><strong>Fig.1.c.</strong> A scalene triangle</p>
+                </div>
+            </div>
+            <p class="subtitle" id="internal_angles">By internal angles</p>
+            <p>Triangles can also be classified according to their internal angles, measured here in degrees.</p>
+            <ul>
+                <li>A right triangle (or right-angled triangle, formerly called a rectangled triangle) has one of its
+                    interior angles measuring 90° (a right angle). The side opposite to the right angle is the
+                    hypotenuse, the longest side of the triangle. The other two sides are called the legs or catheti
+                    (singular: cathetus) of the triangle. Right triangles obey the Pythagorean theorem: the sum of the
+                    squares of the lengths of the two legs is equal to the square of the length of the hypotenuse: a2 +
+                    b2 = c2, where a and b are the lengths of the legs and c is the length of the hypotenuse. Special
+                    right triangles are right triangles with additional properties that make calculations involving them
+                    easier. One of the two most famous is the 3–4–5 right triangle, where 32 + 42 = 52. In this
+                    situation, 3, 4, and 5 are a Pythagorean triple. The other one is an isosceles triangle that has 2
+                    angles measuring 45 degrees (45–45–90 triangle). Triangles that do not have an angle measuring 90°
+                    are called oblique triangles.</li>
+                <li>A triangle with all interior angles measuring less than 90° is an acute triangle or acute-angled
+                    triangle. If c is the length of the longest side, then a2 + b2 > c2, where a and b are the lengths
+                    of the other sides.</li>
+                <li>A triangle with one interior angle measuring more than 90° is an obtuse triangle or obtuse-angled
+                    triangle. If c is the length of the longest side, then a2 + b2 < c2, where a and b are the lengths
+                        of the other sides.</li>
+                <li>A triangle with an interior angle of 180° (and collinear vertices) is degenerate. A right degenerate
+                    triangle has collinear vertices, two of which are coincident.</li>
+            </ul>
+        </section>
+        <section class="main-section" id="Area_of_triangles">
+            <header>
+                Area of triangles
+            </header>
+            <p class="subtitle" id="base_height">Knowing base and height</p>
+            <p>When we know the base and height it is easy. It is simply half of b times h.</p>
+            <div class="center-row">
+                <img src="https://www.mathsisfun.com/geometry/images/triangle-b-h.svg">
+                <p><code>Area = <sup>1</sup>&frasl;<sub>2</sub> ⋅ bh</code></p>
+            </div>
+            <p class="subtitle" id="three_sides">Knowing three sides</p>
+            <p>You can calculate the area of a triangle if you know the lengths of all three sides, using a formula that
+                has been known for nearly 2000 years.
+                It is called "Heron's Formula" after Hero of Alexandria (see below).</p>
+            <p>Just use this two step process:</p>
+            <div class="center-column">
+                <img src="https://www.mathsisfun.com/algebra/images/triangle-sss.svg">
+                <p>Step 1: Calculate "S" (half of the triangle's perimeter):</p>
+                <p><code>S = (a+b+c)/2</code></p>
+                <p>Step 2: Then calculate the Area:</p>
+                <img src="https://www.mathsisfun.com/geometry/images/herons-formula.png">
+            </div>
+            <p class="subtitle" id="two_sides_angle">Knowing two sides and the included angle</p>
+            <p>When we know two sides and the included angle (SAS), there is another formula (in fact three equivalent
+                formulas) we can use.
+                Depending on which sides and angles we know, the formula can be written in three ways:</p>
+            <div class="center-row">
+                <img src="https://www.mathsisfun.com/algebra/images/triangle-sas.svg">
+                <div class="single-item">
+                    <p><code>Area = 1/2⋅ab⋅sin C</code></p>
+                    <p><code>Area = 1/2⋅bc⋅sin A</code></p>
+                    <p><code>Area = 1/2⋅ca⋅sin B</code></p>
+                </div>
+            </div>
+        </section>
+        <section class="main-section" id="Important_points_of_triangles">
+            <header>
+                Important points of triangles
+            </header>
+            <p>As can be seen in the illustration below, it is possible to trace four segments in a triangle, each with
+                different characteristics. From these four different types of triangle divisions, we can find four
+                important points in the triangle. The table presents a summary of the main characteristics of these
+                points.</p>
+            <ul>
+                <li>Altitude: draw a line at right angles to a side and going through the opposite corner.
+                </li>
+                <li>Angle bisector: draw a line from a corner so that it splits the angle in half.</li>
+                <li>Median: draw a line from a corner to the midpoint of the opposite side.</li>
+                <li>Perpendicular bisector: draw a line at right angles to the midpoint of each side.</li>
+            </ul>
+            <img align="center" class="center-img" src="https://www.matematica.pt/en/images/resumos/triangle-lines.png">
+
+            <div class="table-container" role="table" aria-label="Points">
+                <div class="flex-table header" role="rowgroup">
+                    <div class="name-col" role="columnheader">Name</div>
+                    <div class="img-col" role="columnheader">Image</div>
+                    <div class="about-col" role="columnheader">Point</div>
+                    <div class="about-col" role="columnheader">Description</div>
+                </div>
+                <div class="flex-table row" role="rowgroup">
+                    <div class="name-col" id="name" role="cell">Orthocenter</div>
+                    <div class="img-col" id="image" role="cell"><img
+                            src="https://www.matematica.pt/en/images/resumos/triangle-orthocenter.png"></div>
+                    <div class="about-col" id="point" role="cell">How it's made: Intersection point of the 3 altitude.
+                    </div>
+                    <div class="about-col last" role="cell">The orthocenter is in the inner region of the triangle if
+                        this is a acute triangle, coincides with the vertex of the right angle if it is a right triangle
+                        and lies outside the triangle in the case of this being a obtuse triangle.</div>
+                </div>
+                <div class="flex-table row" role="rowgroup">
+                    <div class="name-col" id="name" role="cell">Incenter</div>
+                    <div class="img-col" id="image" role="cell"><img
+                            src="https://www.matematica.pt/en/images/resumos/triangle-incenter.png"></div>
+                    <div class="about-col" id="point" role="cell">Intersection point of the 3 angle bisector</div>
+                    <div class="about-col" role="cell">The incenter is the center of a circle inscribed in the triangle.
+                        Therefore, it is at the same distance from all its sides.</div>
+                </div>
+                <div class="flex-table row" role="rowgroup">
+                    <div class="name-col" id="name" role="cell">Centroid</div>
+                    <div class="img-col" id="image" role="cell"><img
+                            src="https://www.matematica.pt/en/images/resumos/triangle-centroid.png"></div>
+                    <div class="about-col" id="point" role="cell">Intersection point of the 3 median</div>
+                    <div class="about-col" role="cell">The centroid is the center of gravity of the triangle. If we
+                        suspend a triangle through its centroid, it stays in balance. This point is at a distance of
+                        two-thirds from the median to the corresponding vertex.</div>
+                </div>
+                <div class="flex-table row" role="rowgroup">
+                    <div class="name-col" id="name" role="cell">Circumcenter</div>
+                    <div class="img-col" id="image" role="cell"><img
+                            src="https://www.matematica.pt/en/images/resumos/triangle-circumcenter.png"></div>
+                    <div class="about-col" id="point" role="cell">Intersection point of the 3 perpendicular bisector
+                    </div>
+                    <div class="about-col" role="cell">The circumcenter is the center of a circumference circumscribed
+                        in the triangle. Therefore, it is at the same distance from the three vertices.</div>
+                </div>
+            </div>
+        </section>
+        <section class="main-section" id="Right-angled_triangles">
+            <header>
+                Right-angled triangles
+            </header>
+            <p>A right-angled triangle (also called a right triangle)
+                is a triangle with a right angle (90°) in it.</p>
+            <p>The little square in the corner tells us it is a right angled triangle.</p>
+            <p>The right angled triangle is one of the most useful shapes in all of mathematics! (It is used in the
+                Pythagora's Theorem and Sine, Cosine and Tangent for example).</p>
+            <p id="two_types" class="subtitle">Two types</p>
+            <p>There are two types of right angled triangle:</p>
+            <div class="center-row">
+                <img src="https://www.mathsisfun.com/geometry/images/triangle-right-isosceles.svg">
+                <ul>
+                    <li><strong>Isosceles right-angled triangle</strong></li>
+                    <li>One right angle </li>
+                    <li>Two other <strong>equal</strong> angles always of <strong>45°</strong></li>
+                    <li>Two equal sides</li>
+                </ul>
+            </div>
+            <div class="center-row">
+                <img src="https://www.mathsisfun.com/geometry/images/triangle-right.svg">
+                <ul>
+                    <li><strong>Scalene right-angled triangle</strong></li>
+                    <li>One right angle</li>
+                    <li>Two other <strong>unequal</strong> angles</li>
+                    <li>No equal sides</li>
+                </ul>
+            </div>
+        </section>
+        <footer>
+            <header id="documentation">Documentation</header>
+            <ol>
+                <li><a href="https://en.wikipedia.org/wiki/Triangle">Wikipedia</a></li>
+                <li><a href="https://www.mathsisfun.com/algebra/trig-area-triangle-without-right-angle.html">Math is
+                        Fun</a></li>
+                <li><a href="https://www.matematica.pt/en/cheatsheet/triangle-points.php">Matematica</a></li>
+            </ol>
+        </footer>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>
