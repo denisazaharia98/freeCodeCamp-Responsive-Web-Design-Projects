@@ -1,0 +1,468 @@
+body {
+  color: rgb(30, 30, 30);
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+/* Page loader */
+.loader {
+  position: fixed;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: rgb(255, 255, 255);
+  z-index: 99999;
+}
+
+.spinner-border {
+  color: rgb(247, 199, 220);
+  width: 100px;
+  height: 100px;
+}
+
+.loader,
+.hidden {
+  animation: fadeOut 2.5s;
+  animation-fill-mode: forwards;
+}
+
+.thumb {
+  height: 100px;
+  border: 1px solid #282c35;
+  margin: 10px;
+}
+
+@keyframes fadeOut {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+/* Scroll animation for elements */
+.reveal {
+  position: relative;
+  opacity: 0;
+}
+
+.reveal.active {
+  opacity: 1;
+}
+
+.active.fade-bottom {
+  animation: fade-bottom 1s ease-in;
+}
+
+@keyframes fade-bottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+main {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 10%;
+  height: fit-content;
+  margin: auto;
+}
+
+/* Navbar */
+nav {
+  width: 100%;
+  padding: 0 10%;
+}
+
+.navbar-nav {
+  width: 90%;
+  margin: auto;
+  justify-content: space-around;
+}
+
+/* Logo in nav*/
+#header-img {
+  width: 85px;
+  height: 85px;
+}
+
+/* Underline on hover link from navbar*/
+.nav-link {
+  position: relative;
+  width: fit-content;
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(247, 199, 220);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.nav-link:hover::before {
+  transform: scaleX(1);
+}
+
+/* The shopping cart */
+nav .fa {
+  color: rgb(30, 30, 30);
+  cursor: pointer;
+}
+
+/* Big sale announcement */
+.img-intro {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.img-intro > img {
+  width: 100%;
+  filter: brightness(60%);
+}
+
+.right-text {
+  text-align: center;
+  z-index: 100;
+  position: absolute;
+  color: rgb(255, 255, 255);
+  font-size: xx-large;
+  font-weight: bold;
+  float: right;
+  right: 10%;
+  top: 20vw;
+}
+
+.right-text > button {
+  font-size: large;
+  padding: 12px;
+}
+
+/* Subscribe form */
+form {
+  border: 1px solid black;
+  outline: 15px solid rgb(255, 255, 255);
+  box-shadow: 0 12px 22px rgb(128, 128, 128);
+  width: fit-content;
+  height: auto;
+  padding: 40px;
+  text-align: center;
+  margin: 4rem auto 0;
+}
+
+/* Styling line in the main section */
+.long-line {
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: row;
+  text-transform: uppercase;
+}
+
+.long-line:before,
+.long-line:after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 2px solid;
+  margin: auto;
+  color: rgb(232, 232, 232);
+}
+
+.long-line:before {
+  margin-right: 10px;
+}
+
+.long-line:after {
+  margin-left: 10px;
+}
+
+/* New collections presentation */
+.collections {
+  width: 80%;
+  height: 380px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 5% auto;
+}
+
+.clothes {
+  cursor: pointer;
+  transition-property: filter;
+  position: relative;
+  margin: 10px;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease-in-out;
+  backface-visibility: hidden;
+  cursor: pointer;
+}
+
+.center-text {
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.clothes:hover .image {
+  filter: brightness(60%);
+}
+
+.clothes:hover .center-text {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-weight: 500;
+  font-size: larger;
+  padding: 16px 32px;
+  opacity: 1;
+}
+
+.small-pics {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* About us */
+#about {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: space-around;
+  margin: auto;
+  overflow: hidden;
+  text-align: center;
+}
+
+.title {
+  display: block;
+  text-transform: uppercase;
+  font-family: "Sawarabi Gothic", sans-serif;
+}
+
+.about-content {
+  width: 12rem;
+  margin: 1rem;
+}
+
+/* Browse products */
+.product-table {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.product {
+  background-color: rgb(255, 255, 255);
+  border: none;
+  box-shadow: 0 4px 10px rgb(128, 128, 128);
+  width: 250px;
+  text-transform: uppercase;
+  margin: 1rem;
+}
+
+.model-clothes {
+  max-width: 100%;
+  height: auto;
+}
+
+.line {
+  background-color: black;
+  height: 5px;
+  margin: 20px 25px 0px;
+}
+
+.details {
+  padding: 25px;
+}
+
+#price {
+  float: right;
+  font-family: "Sawarabi Gothic", sans-serif;
+  font-size: medium;
+}
+
+#submit,
+#email,
+#purchase {
+  display: flex;
+  margin: auto;
+  padding: 8px;
+  border: 1px solid rgb(130, 130, 130);
+}
+
+#email {
+  margin: 25px auto;
+}
+
+#purchase {
+  margin: 60px auto 10px;
+}
+
+#submit,
+#purchase,
+.right-text > button {
+  background-color: rgb(30, 30, 30);
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  border: none;
+  padding: 8px;
+}
+
+/* Opening new store */
+.new-store {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  background-color: rgb(30, 30, 30);
+  padding: 5%;
+  margin-top: 4rem;
+}
+
+iframe {
+  width: 50%;
+}
+
+.abt-new-store {
+  width: 50%;
+  margin: 2%;
+  color: rgb(232, 232, 232);
+}
+
+.new-store-title {
+  font-size: x-large;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  z-index: 9999;
+  width: fit;
+  height: fit-content;
+  padding: 2rem;
+  background-color: rgb(63, 63, 63);
+  color: rgb(232, 232, 232);
+}
+
+.company {
+  margin: auto;
+}
+
+/* Social media buttons */
+.social {
+  flex-grow: 1;
+  font-size: 25px;
+}
+
+.fa {
+  margin: 10px;
+  text-decoration: none;
+  color: rgb(232, 232, 232);
+  transition-property: color;
+  transition-duration: 1s;
+}
+
+.fa:hover {
+  color: rgb(247, 199, 220);
+}
+
+/* Responsiveness */
+@media (min-width: 1100px) {
+  .small-pics {
+    height: 380px;
+  }
+  .small-pics .clothes .image {
+    width: 165px;
+  }
+}
+@media (max-width: 1100px) {
+  .collections {
+    flex-direction: column;
+    width: 50%;
+    height: fit-content;
+  }
+  .small-pics {
+    width: 100%;
+  }
+}
+@media (max-width: 850px) {
+  .new-store {
+    flex-direction: column-reverse;
+  }
+  .new-store > * {
+    margin: auto;
+    width: 80%;
+  }
+}
+@media (max-width: 450px) {
+  .right-text {
+    margin: auto;
+    right: 0;
+    top: 15%;
+    left: 0;
+    bottom: 0;
+    font-size: large;
+  }
+  .right-text > button {
+    font-size: small;
+  }
+  .icon {
+    display: none;
+  }
+  form {
+    font-size: small;
+    padding: 20px;
+  }
+  #email {
+    width: 90%;
+    margin: 25px auto;
+  }
+  ::placeholder {
+    font-size: x-small;
+  }
+  .collections {
+    width: 70%;
+  }
+  .new-store > * {
+    height: 80%;
+  }
+}
