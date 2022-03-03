@@ -1,5 +1,5 @@
 # freeCodeCamp - Product Landing Page
-This is a solution to the [Product Landing Page project on freeCodeCamp](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-product-landing-page)
+This is a solution for the [Product Landing Page project on freeCodeCamp](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-product-landing-page).
 
 # Screenshot
 
@@ -8,8 +8,8 @@ This is a solution to the [Product Landing Page project on freeCodeCamp](https:/
 
 # Links
 
-- Solution URL: 
-- Live Site URL: 
+- Solution URL: https://github.com/denisazaharia98/freeCodeCamp-Responsive-Web-Design-Projects/tree/main/Product%20Landing%20Page
+- Live Site URL: https://denisazaharia98.github.io/freeCodeCamp-Responsive-Web-Design-Projects/Product%20Landing%20Page/
 
 # Built with
 
