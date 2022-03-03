@@ -1,5 +1,5 @@
 # freeCodeCamp - Survey Form Page
-This is a solution to the [Survey Form Page project on freeCodeCamp](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-survey-form)
+This is a solution for the [Survey Form Page project on freeCodeCamp](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-survey-form).
 
 # Screenshot
 
