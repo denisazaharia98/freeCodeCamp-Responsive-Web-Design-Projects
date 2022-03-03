@@ -17,3 +17,4 @@ This is a solution to the [Survey Form Page project on freeCodeCamp](https://www
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
+- JavaScript
