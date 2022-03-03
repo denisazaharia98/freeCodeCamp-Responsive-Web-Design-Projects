@@ -1,5 +1,5 @@
 # freeCodeCamp - Tribute Page
-This is a solution to the [Tribute Page project on freeCodeCamp](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-tribute-page)
+This is a solution for the [Tribute Page project on freeCodeCamp](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-tribute-page).
 
 # Screenshot
 
